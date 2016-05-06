@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackensack.umc.activity.DoctorSearchActivity"
+    android:background="@color/light_grey"
+    android:focusable="true" android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/relative_my_doctor">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/my_doctor"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:gravity="left"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grey_arow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/doctor_search_text"
+            android:id="@+id/input_hint_text"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:layout_below="@id/relative_my_doctor"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/input_hint_text"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_linear_layout"
+            android:layout_below="@+id/header_relative_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/speciality_spinner"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dialog"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="10dp"
+                />
+
+           <!-- <com.hackensack.umc.customview.CustomSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/speciality_spinner"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dialog"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="10dp"
+                android:prompt="0"
+                />-->
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchwithin_spinner"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dialog"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="10dp"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender_spinner"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dialog"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="10dp"
+                />
+
+            <!--<Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_spinner"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dialog"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_margin="10dp"/>-->
+
+            <TextView
+                android:id="@+id/date_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:hint=" Date"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/zip_code"
+                    android:id="@+id/zipcode_edittext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    />
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/firstname_text"
+                    android:id="@+id/firstname_edittext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    />
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+           <!-- <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lastname_text"
+                    android:id="@+id/lastname_edittext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    />
+
+           <!-- </android.support.design.widget.TextInputLayout>-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

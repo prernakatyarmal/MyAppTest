@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    tools:context="com.hackensack.umc.activity.ActivityCropImage"
+    android:orientation="vertical">
+
+
+
+    <com.hackensack.umc.cropper.CropImageView
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_weight="1"
+      />
+
+
+    <ImageView
+        android:id="@+id/croppedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/Button_crop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Crop" />
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/Button_crop"
+            android:layout_weight="1"
+            android:text="Undo" />
+
+        <Button
+            android:id="@+id/btnTakePicture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/Button_crop"
+            android:layout_weight="1"
+            android:text="TakePicture"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

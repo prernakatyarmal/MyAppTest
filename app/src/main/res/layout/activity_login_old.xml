@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackensack.umc.activity.HackensackUMCActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:id="@+id/header_relative_layout"
+        >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hospital_imageView"
+            android:background="@drawable/hospital"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:elevation="2dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/guide_text"
+            android:id="@+id/welcome_text"
+            android:layout_below="@+id/hospital_imageView"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"/>
+
+        <!--
+        Button
+        android:elevation="2dp"
+        android:background="@drawable/home_button_background"-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_linear_layout"
+        android:layout_below="@+id/header_relative_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_relative_layout"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_icon_imageView"
+            android:background="@drawable/username_icon"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_text"
+            android:id="@+id/username_edittext"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/username_icon_imageView"
+            android:layout_centerVertical="true"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_relative_layout"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_icon_imageView"
+                android:background="@drawable/password_icon"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_text"
+                android:id="@+id/password_edittext"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/password_icon_imageView"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button_text"
+        android:id="@+id/login_button"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/password_edittext" />
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="@string/guest_login_text"
+            android:id="@+id/guest_link_text"
+            android:layout_below="@+id/login_button"
+            android:textColor="@color/primaryColor"
+            android:layout_marginTop="15dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/copy_right"
+        android:id="@+id/copy_right_text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"/>
+
+</RelativeLayout>

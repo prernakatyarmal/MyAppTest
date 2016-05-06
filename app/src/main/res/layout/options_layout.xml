@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/currLoc"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/currLoc" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/homeAddr"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/homeAddr" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/workAddr"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/workAddr" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/otherAddr"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/otherAddr" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/cancel" />
+
+
+</LinearLayout>

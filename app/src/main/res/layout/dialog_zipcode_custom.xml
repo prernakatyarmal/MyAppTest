@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/er_wait_time_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@string/enter_zip_code"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/only_five_digits"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/edtZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/er_wait_time_list"
+       android:gravity="center"
+        android:background="@drawable/dialog_ok_pressed"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_dialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/done"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:background="@drawable/dialog_ok_pressed"
+           />
+
+        <Button
+            android:id="@+id/button_dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/close"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:background="@drawable/dialog_ok_pressed"
+            android:layout_marginLeft="35dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

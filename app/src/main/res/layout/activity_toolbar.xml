@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:id="@+id/header_relative_layout"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_action_bar"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+               <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drawer_icon"
+                    android:src="@drawable/drawer_menu"
+                    android:layout_gravity="center_vertical"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="-60dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_action_bar"
+                >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/user"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/user_imageView"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Hi Guest"
+                    android:id="@+id/user_name_text"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/welcome_message"
+                    android:id="@+id/welcome_text"
+                    android:layout_below="@+id/user_name_text"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/login_button"
+            android:textColor="@color/white"
+            android:layout_below="@id/top_header"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/profile_proceed_green"
+            android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@id/top_header"
+        android:layout_margin="10dp"
+        android:id="@+id/login_linear_layout"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99">
+
+            <ImageView
+                android:id="@+id/dummy_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fav_doctor_icon"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dummy_text"
+                android:layout_below="@id/dummy_icon"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="My Doctors"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_weight="0.01"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:id="@+id/my_doctor_layout">
+
+            <ImageView
+                android:id="@+id/my_doctor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/fav_doctor_icon"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_doctor_image"
+                android:textColor="@color/white"
+                android:text="My Doctors"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!--</android.support.v7.widget.Toolbar>-->

@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.hackensack.umc.activity.InsuranceInfoActivity">
+
+    <ScrollView
+        android:id="@+id/reg_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding10"
+            android:layout_marginRight="@dimen/padding10"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/plan_prov_hint_str"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/plan_prov_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_str"
+                    android:textColorHint="@color/profile_manual_grey" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/member_number"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/mem_id_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_str"
+                    android:textColorHint="@color/profile_manual_grey" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/grp_name_hint_str"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/grp_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_str"
+                    android:textColorHint="@color/profile_manual_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/grp_no_hint_str"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/grp_no_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_str"
+                    android:textColorHint="@color/profile_manual_grey" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/coverage_hint_str"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/cov_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_str"
+                    android:textColorHint="@color/profile_manual_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:layout_marginTop="@dimen/padding10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/plan_type_hint_str"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/plan_type_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_str"
+                    android:textColorHint="@color/profile_manual_grey" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/insurance_img_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding15"
+                android:drawableTop="@drawable/insurance_camera_img"
+                android:text="@string/insurance_img_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
